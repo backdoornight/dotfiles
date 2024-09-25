@@ -1,0 +1,6 @@
+[user]
+	email = roger@roghu.com
+	name = Roger Hughes
+
+[init]
+	defaultBranch = main
