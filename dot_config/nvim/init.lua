@@ -29,7 +29,16 @@ vim.g.mapleader = vim.keycode('<Space>')
 
 -- Setup lazy.nvim
 require('lazy').setup({
-	spec = {},
+	spec = {
+		{ 'catppuccin/nvim', 
+			name = 'catppuccin', 
+			lazy = false,
+			priority = 1000,
+			config = function()
+		  	vim.cmd.colorscheme('catppuccin')
+			end,
+		},
+	},
 	install = {},
 	-- automatically check for plugin updates
 	checker = { enabled = true },
